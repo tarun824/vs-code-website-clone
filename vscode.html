@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code</title>
+  <link rel="stylesheet" type="text/css" href="/style.css  " />
+</head>
+
+<!-- const cardData=[{ "title":"Choose the modek that works for you",
+"description":"Pick the model that works best for your project and team,
+including GPT 4o and Claude
+Sonnet.","img":"https://code.visualstudio.com/assets/home/choose-model-light.webp"
+}]; -->
+
+<body>
+  <!-- Header -->
+  <header style=" display: flex; align-items: center ;justify-content: space-between;padding-right: 120px; padding-left: 120px">
+    <div style="display: flex; align-items: center">
+      <h2 style="padding-right: 20px">Visual Studio Code</h2>
+      <a id="header_button" href="#">Docs</a>
+      <a id="header_button" href="#">Updates</a>
+      <a id="header_button" href="#">API</a>
+      <a id="header_button" href="#">Extensions</a>
+      <a id="header_button" href="#">FAQ</a>  
+      <a id="header_button" href="#">GitHub Copilot</a>
+    </div>
+    <div>
+      <button id="blue_button" style="margin-bottom: 15px;margin-top: 15px;">Download</button>
+    </div>
+  </header>
+  <div style="padding-right: 120px; padding-left: 120px ">
+    <!-- MAIN BODY -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <p>Get <a href=""> GitHub Copilot Free </a>in VS Code!</p>
+      <h1 style="
+            font-weight: bold;
+            margin: 5;
+            font-size: 66px;
+            text-align: center;
+          ">
+        Your code editor.<br />
+        Redefined with AI.
+      </h1>
+      <!-- 2 buttons -->
+      <div style="display: flex">
+        <button id="blue_button">Download for Windows</button>
+        <button style="
+              background-color: #eaeaea;
+              border: none;
+              border-radius: 6px;
+              padding: 12px;
+              font-weight: 600;
+              margin-left: 20px;
+            ">
+          Get Copilot Free
+        </button>
+      </div>
+    </div>
+
+    <!-- <img
+        src="https://code.visualstudio.com/assets/home/hero-background.webp"
+        height="400px"
+        style="position: absolute; z-index: 0"
+        alt="background image"
+      /> -->
+    <!-- <video
+        style="
+          position: absolute;
+          z-index: -1;
+          font-size: 20px;
+          font-weight: bold;
+          top: 0;
+          left: 0;
+        "
+        src="https://code.visualstudio.com/assets/home/hero-light-lg.webm"
+        alt="Demo video"
+      /> -->
+    <div style="
+          margin-top: 20px;
+          display: flex;
+          /* width: 95%; */
+          justify-content: space-between;
+        ">
+      <!-- 3 Cards -->
+      <div style="height: 300px; width: 300px" id="card_style">
+        <h2 style="margin: 0; font-size: 20px">
+          Choose the model that works for you
+        </h2>
+        <p style="font-size: 17px; color: #475569">
+          Pick the model that works best for your project and team, including
+          GPT 4o and Claude Sonnet.
+        </p>
+        <img src="https://code.visualstudio.com/assets/home/choose-model-light.webp"
+          style="height: 140px; width: 250px; font-weight: 500" alt="Model image" />
+      </div>
+      <!-- 2nd Card -->
+      <div style="height: 300px; width: 300px" id="card_style">
+        <h2 style="margin: 0; font-size: 20px">
+          Choose the model that works for you
+        </h2>
+        <p style="font-size: 17px; color: #475569">
+          Pick the model that works best for your project and team, including
+          GPT 4o and Claude Sonnet.
+        </p>
+        <img src="https://code.visualstudio.com/assets/home/choose-model-light.webp"
+          style="height: 140px; width: 250px; font-weight: 500" alt="Model image" />
+      </div>
+      <!-- 3rd Card -->
+      <div style="height: 300px; width: 300px" id="card_style">
+        <h2 style="margin: 0; font-size: 20px">
+          Choose the model that works for you
+        </h2>
+        <p style="font-size: 16px; color: #475569">
+          Pick the model that works best for your project and team, including
+          GPT 4o and Claude Sonnet.
+        </p>
+        <img src="https://code.visualstudio.com/assets/home/choose-model-light.webp"
+          style="height: 140px; width: 250px; font-weight: 500" alt="Model image" />
+      </div>
+    </div>
+    <!--Activate Copilot Free card  -->
+    <div style="
+          padding: 35px;
+          border-radius: 13px;
+          margin-top: 50px;
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          background-image: url(https://code.visualstudio.com/assets/home/copilot-free-banner-bg-light.webp);
+        ">
+      <h1 style="
+            font-weight: bold;
+            margin: 5;
+            font-size: 30px;
+            /* text-align: center; */
+          ">
+        Activate Copilot Free<br />
+        in Visual Studio Code
+      </h1>
+      <div style="display: flex; flex-direction: column; margin-right: 100px">
+        <p style="font-size: 18px; font-weight: 600">
+          No trial. No credit card required. Just your GitHub account.
+        </p>
+        <button style="
+              background-color: #eaeaea;
+              border-color: rgba(0, 0, 0, 0.1);
+              border-radius: 5px;
+              /* padding-left: 6px; */
+              padding-top: 10px;
+              padding-bottom: 10px;
+              width: 150px;
+
+              font-weight: 600;
+              /* margin-right: 250px; */
+            ">
+          Get Copilot Free
+        </button>
+      </div>
+    </div>
+    <!-- Code efficiently section -->
+    <div id="div_style_with_txt_img">
+      <!-- text -->
+      <div id="div_style_for_2_txt_col">
+        <h2>Code with Extensions</h2>
+        <p id="p_for_description">
+          Extensions let you customize VS Code and Copilot with AI-powered
+          features grounded securely in your team's data and workflows. Grab
+          one from the gallery and add it to chat like @azure, or
+          <a href="#">build your own Copilot extension</a>
+          to power your team's unique scenarios.
+        </p>
+      </div>
+      <img id="standard_image_size_in_right" src="https://code.visualstudio.com/assets/home/completions-light.webp"
+        alt="Code efficiently image" />
+    </div>
+
+    <!-- Fully customizable section -->
+    <div id="div_style_with_txt_img">
+      <!-- text -->
+      <div id="div_style_for_2_txt_col">
+        <h2>Fully customizable</h2>
+        <p id="p_for_description">
+          Customize your VS Code UI and layout so that it fits your coding
+          style.<br />
+          <br />
+          <a href="#">Color themes</a>
+          let you modify the colors in VS Code's user interface to suit your
+          preferences and work environment.<br /><br />
+          <a href="#">Settings Sync</a>
+
+          enables you to share your user settings across your VS Code
+          instances with the Settings Sync feature.<br /><br />
+          <a href="#">Profiles</a>
+
+          let you create sets of customizations and quickly switch between
+          them or share them with others.<br />
+        </p>
+      </div>
+      <img id="standard_image_size_in_right"
+        src="https://code.visualstudio.com/assets/home/swimlane-customized-light.png" alt="Code efficiently image"
+        style="padding-top: 60px; padding-bottom: 60px" />
+    </div>
+    <!-- Code anywhere section -->
+    <div id="div_style_with_txt_img">
+      <!-- text -->
+      <div id="div_style_for_2_txt_col">
+        <h2>Code anywhere</h2>
+        <p id="p_for_description">
+          Code wherever you're most productive, whether you're connected to
+          the cloud, a remote repository, or in the browser with VS Code for
+          the Web (vscode.dev).<br />
+          <br />
+          <a href="#">Built-in Source Control</a>
+          empowers you with Git support out-of-the-box. Many other source
+          control providers are available through extensions.
+          <br /><br />
+          <a href="#">GitHub Codespaces </a>
+
+          provides cloud-powered development environments for any activity -
+          whether it's a long-term project, or a short-term task like
+          reviewing a pull request.
+          <br />
+        </p>
+      </div>
+      <img id="standard_image_size_in_right" src="https://code.visualstudio.com/assets/home/swimlane-anywhere-light.png"
+        alt="Code efficiently image" />
+    </div>
+
+    <!-- Code in any language section -->
+    <div id="div_style_with_txt_img" style="margin-top: 100px; margin-bottom: 100px">
+      <!-- text -->
+      <div id="div_style_for_2_txt_col">
+        <h2>Code in any language</h2>
+        <p id="p_for_description">
+          VS Code supports almost every major programming language. Several
+          ship in the box, like JavaScript, TypeScript, CSS, and HTML, but
+          extensions for others can be found in the VS Code Marketplace.
+          <br />
+          <br />
+        </p>
+      </div>
+      <!-- coding languages Grid -->
+      <div style="
+            display: grid;
+            column-gap: 80px;
+            row-gap: 15px;
+            /* background-color: black; */
+            /* width: 200px;
+            height: 300px; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 10px;
+            margin-bottom: 10px;
+          ">
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+        <div style="display: flex; align-items: center">
+          <img src="https://code.visualstudio.com/assets/home/language-js.png" alt="coding language image"
+            id="small_img_style" />
+          <p id="coding_language_text_style">JavaScript</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Code with Extensions grid  -->
+    <div style="display: flex; align-items: center">
+      <!-- text -->
+      <div style="
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            margin-right: 55px;
+          ">
+        <h2>Code with Extensions</h2>
+        <p id="p_for_description">
+          Extensions let you customize VS Code and Copilot with AI-powered
+          features grounded securely in your team's data and workflows. Grab
+          one from the gallery and add it to chat like @azure, or
+          <a href="#">build your own Copilot extension</a>
+          to power your team's unique scenarios.
+        </p>
+      </div>
+      <!-- cards -->
+      <div style="
+            display: grid;
+            gap: 10px;
+            width: 200px;
+            height: 300px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 10px;
+            margin-bottom: 10px;
+          ">
+        <!-- 1st -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 2nd -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 3rd Card -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 4th Card -->
+
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 5th -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 6th -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 7th Card -->
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 8th Card -->
+
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+        <!-- 9th Card -->
+
+        <div id="card_style" class="grid_card_style">
+          <img src="https://code.visualstudio.com/assets/images/stripe-extension.png" alt="Codeing language image"
+            style="height: 40px; width: 40px" />
+          <div style="display: flex; flex-direction: column; margin-left: 10px">
+            <h3 style="
+                  font-size: 16px;
+                  margin-bottom: 2px;
+                  margin-top: 5px;
+                  font-weight: 600;
+                ">
+              Stripe
+            </h3>
+            <p style="font-size: 14px">
+              Build, test, and use Stripe inside your editor
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 150px; text-align: center; font-size: 30px;">Code with rich features</h2>
+    <p id="p_for_description" style="margin-top: 12px; text-align: center; ">
+      There's a lot more to an editor. Whether it's using built-in features or <br /> rich extensions, there's something
+      for everyone.</h2>
+
+    </p>
+    <!-- last Grid -->
+    <div style="
+
+            display: grid;
+            gap:48px;
+            width: 70%;
+            height: 300px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            margin-top: 50px;
+            margin-bottom: 10px;
+          ">
+      <!-- list of last grid elements -->
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+      <div style=" width: 250px" id="card_style">
+        <div id="small_img_bg">
+          <img src="https://code.visualstudio.com/assets/icons/codicon-terminal.svg" alt="design image"
+            style="height: 25px; width: 25px" />
+        </div>
+        <h3 id="last_grid_card_title">
+          Integrated terminal
+
+        </h3>
+        <p id="p_small_for_description">
+          Use your favorite shell whether it's zsh, pwsh, or git bash, all inside the editor.
+        </p>
+
+      </div>
+    </div>
+    <footer style="margin-top: 120px; margin-bottom: 80px; display: flex; flex-direction: column;">
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+        <img style="  margin-right: 10px;  height: 25px;  width: 25px;"src="https://code.visualstudio.com/assets/icons/x-icon.svg" alt="X Image" />
+        <img style="   margin-right: 10px;  height: 25px;  width: 25px;" src="https://code.visualstudio.com/assets/icons/github-icon.svg" alt="X Image" />
+        <img style="   margin-right: 10px;  height: 25px;  width: 25px;" src="https://code.visualstudio.com/assets/icons/youtube-icon.svg" alt="X Image" />
+      </div>
+      <img style="    height: 25px;  width: 25px;" src="https://code.visualstudio.com/assets/icons/microsoft.svg" alt="X Image" />
+
+      </div>
+      <!-- Text Button -->
+      <div style="display: flex; margin-top: 10px; padding-left: 5px; ">
+        <a id="header_button" href="#">Support</a>
+        <a id="header_button" href="#">Privacy</a>
+        <a id="header_button" href="#">Terms of Use</a>
+        <a id="header_button" href="#">License</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
