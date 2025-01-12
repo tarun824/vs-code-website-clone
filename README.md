@@ -1,6 +1,6 @@
 This is VS Code Website Clone.
 
-Tech Stack:
+Tech Stack Used:
 
 > Pure HTML and CSS
 
